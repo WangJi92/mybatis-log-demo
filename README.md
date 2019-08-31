@@ -1,6 +1,6 @@
 # mybatis-log-demo
 
- 使用插件的方式集成打印mybatis sql 的日志，方便查看 日志的格式 [mybatis sql print pluin](https://github.com/WangJi92/mybatis-sql-log)
+ 使用插件的方式集成打印mybatis sql 的日志，方便查看 日志的格式 [mybatis sql print plugins](https://github.com/WangJi92/mybatis-sql-log)
  
  ```xml
         <dependency>

@@ -73,8 +73,8 @@
         </dependency>
         <dependency>
             <groupId>com.github.WangJi92</groupId>
-            <artifactId>mmybatis-mapper-reload-sping-boot-start</artifactId>
-            <version>0.0.1</version>
+            <artifactId>mybatis-mapper-reload-sping-boot-start</artifactId>
+            <version>0.0.2</version>
         </dependency>
 
     </dependencies>

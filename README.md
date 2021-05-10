@@ -11,14 +11,14 @@
          <dependency>
             <groupId>com.github.WangJi92</groupId>
             <artifactId>mybatis-sql-log</artifactId>
-            <version>1.0.0</version>
+            <version>1.0.3</version>
         </dependency>
 ```
-mybats.print=true 使用spring boot 工程集成
+mybatis.print=true 使用spring boot 工程集成
 
 org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration 内部自动集成了插件
 ```xml
-mybats.print=true
+mybatis.print=true
 server.port = 7012
 #数据库连接
 spring.datasource.url = jdbc:mysql://127.0.0.1:3306/test
@@ -40,4 +40,18 @@ spring.datasource.hikari.connection-test-query = SELECT 1
   <plugin interceptor="com.mybatis.spring.boot.autoconfigure.MybatisSqlCompletePrintInterceptor">
   </plugin>
 </plugins
+```
+
+## 集成 mapper xml 重载
+
+[mybaits mapper xml 热更新](https://github.com/WangJi92/mybatis-mapper-reload-spring-boot-start)
+mybatis.mapper.reload.enable=true
+mybatis.mapper.reload.mapper-location=classpath*:/**/*apper*.xml
+
+```xml
+ <dependency>
+    <groupId>com.github.WangJi92</groupId>
+    <artifactId>mybatis-mapper-reload-sping-boot-start</artifactId>
+    <version>0.0.3</version>
+</dependency>
 ```
